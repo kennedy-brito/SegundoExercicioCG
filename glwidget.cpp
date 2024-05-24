@@ -2,7 +2,13 @@
 
 GLWidget::GLWidget(QWidget *parent)
     : QOpenGLWidget{parent}
-{}
+{
+    this->tx = 0.0f;
+    this->ty = 0.0f;
+    this->sx = 0.0f;
+    this->sy = 0.0f;
+    this->rz = 0.0f;
+}
 
 void GLWidget::initializeGL()
 {
@@ -12,6 +18,12 @@ void GLWidget::initializeGL()
 void GLWidget::paintGL()
 {
     glClear(GL_COLOR_BUFFER_BIT);
+
+    glLoadIdentity();
+    glTranslatef(tx, ty, 0.0f);
+    // glScalef(sx, sy, 1.0f);
+    // glRotatef(rz, 0.0f, 0.0f, 1.0f);
+
 
     glBegin(GL_TRIANGLES);
         glColor3f(1.0f, 0.0f, 0.0f);
@@ -29,4 +41,11 @@ void GLWidget::paintGL()
 void GLWidget::resizeGL(int w, int h)
 {
 
+}
+
+void GLWidget::translate(float x, float y)
+{
+    this->tx += x;
+    this->ty += y;
+    update();
 }
