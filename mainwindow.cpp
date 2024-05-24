@@ -52,3 +52,33 @@ void MainWindow::on_anticlockButton_clicked()
     this->ui->widget->rotate(-5);
 }
 
+
+void MainWindow::on_raiseHeightBtn_clicked()
+{
+    this->ui->widget->scale(0.0f, 0.04f);
+}
+
+
+void MainWindow::on_lowerHeightBtn_clicked()
+{
+    this->ui->widget->scale(0.0f, -0.04f);
+}
+
+
+void MainWindow::on_plusWidthBtn_clicked()
+{
+    this->ui->widget->scale(0.04f, 0.0f);
+}
+
+
+void MainWindow::on_minusWidthBtn_clicked()
+{
+    this->ui->widget->scale(-0.04f, 0.0f);
+}
+
+
+void MainWindow::on_resetButton_clicked()
+{
+    this->ui->widget->reset();
+}
+

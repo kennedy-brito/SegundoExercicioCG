@@ -16,7 +16,7 @@ public:
     void translate(float x, float y);
     void rotate(float z);
     void scale(float x, float y);
-
+    void reset();
 
 private:
     float tx,ty;

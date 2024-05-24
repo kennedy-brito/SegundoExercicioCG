@@ -30,6 +30,16 @@ private slots:
 
     void on_anticlockButton_clicked();
 
+    void on_raiseHeightBtn_clicked();
+
+    void on_lowerHeightBtn_clicked();
+
+    void on_plusWidthBtn_clicked();
+
+    void on_minusWidthBtn_clicked();
+
+    void on_resetButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

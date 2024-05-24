@@ -55,3 +55,20 @@ void GLWidget::rotate(float z)
     this->rz+=z;
     update();
 }
+
+void GLWidget::scale(float x, float y)
+{
+    this->sx += x;
+    this->sy += y;
+    update();
+}
+
+void GLWidget::reset()
+{
+    this->tx = 0.0f;
+    this->ty = 0.0f;
+    this->sx = 1.0f;
+    this->sy = 1.0f;
+    this->rz = 0.0f;
+    update();
+}

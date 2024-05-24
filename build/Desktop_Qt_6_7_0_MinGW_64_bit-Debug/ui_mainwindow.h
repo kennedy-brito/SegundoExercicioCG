@@ -40,6 +40,7 @@ public:
     QPushButton *lowerHeightBtn;
     QPushButton *plusWidthBtn;
     QPushButton *minusWidthBtn;
+    QPushButton *resetButton;
     QMenuBar *menubar;
     QMenu *menuTransformations;
 
@@ -97,6 +98,9 @@ public:
         minusWidthBtn = new QPushButton(groupBox_3);
         minusWidthBtn->setObjectName("minusWidthBtn");
         minusWidthBtn->setGeometry(QRect(120, 90, 111, 31));
+        resetButton = new QPushButton(centralwidget);
+        resetButton->setObjectName("resetButton");
+        resetButton->setGeometry(QRect(380, 480, 83, 29));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -128,6 +132,7 @@ public:
         lowerHeightBtn->setText(QCoreApplication::translate("MainWindow", "lower height", nullptr));
         plusWidthBtn->setText(QCoreApplication::translate("MainWindow", "increase width", nullptr));
         minusWidthBtn->setText(QCoreApplication::translate("MainWindow", "decrease width", nullptr));
+        resetButton->setText(QCoreApplication::translate("MainWindow", "Reset", nullptr));
         menuTransformations->setTitle(QCoreApplication::translate("MainWindow", "Transformations", nullptr));
     } // retranslateUi
 
