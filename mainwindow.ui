@@ -155,7 +155,7 @@
     <property name="title">
      <string>Scale</string>
     </property>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="raiseHeightBtn">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -168,7 +168,7 @@
       <string>raise height</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="lowerHeightBtn">
      <property name="geometry">
       <rect>
        <x>0</x>
@@ -181,7 +181,7 @@
       <string>lower height</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="plusWidthBtn">
      <property name="geometry">
       <rect>
        <x>120</x>
@@ -194,7 +194,7 @@
       <string>increase width</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="minusWidthBtn">
      <property name="geometry">
       <rect>
        <x>120</x>

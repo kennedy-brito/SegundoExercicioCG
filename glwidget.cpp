@@ -5,8 +5,8 @@ GLWidget::GLWidget(QWidget *parent)
 {
     this->tx = 0.0f;
     this->ty = 0.0f;
-    this->sx = 0.0f;
-    this->sy = 0.0f;
+    this->sx = 1.0f;
+    this->sy = 1.0f;
     this->rz = 0.0f;
 }
 
@@ -21,8 +21,8 @@ void GLWidget::paintGL()
 
     glLoadIdentity();
     glTranslatef(tx, ty, 0.0f);
-    // glScalef(sx, sy, 1.0f);
-    // glRotatef(rz, 0.0f, 0.0f, 1.0f);
+    glScalef(sx, sy, 1.0f);
+    glRotatef(rz, 0.0f, 0.0f, 1.0f);
 
 
     glBegin(GL_TRIANGLES);
@@ -47,5 +47,11 @@ void GLWidget::translate(float x, float y)
 {
     this->tx += x;
     this->ty += y;
+    update();
+}
+
+void GLWidget::rotate(float z)
+{
+    this->rz+=z;
     update();
 }

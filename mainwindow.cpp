@@ -40,3 +40,15 @@ void MainWindow::on_upButton_clicked()
 
 }
 
+
+void MainWindow::on_clockwiseButton_clicked()
+{
+    this->ui->widget->rotate(5);
+}
+
+
+void MainWindow::on_anticlockButton_clicked()
+{
+    this->ui->widget->rotate(-5);
+}
+

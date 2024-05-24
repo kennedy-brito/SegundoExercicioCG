@@ -36,10 +36,10 @@ public:
     QPushButton *clockwiseButton;
     QPushButton *anticlockButton;
     QGroupBox *groupBox_3;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
-    QPushButton *pushButton_4;
+    QPushButton *raiseHeightBtn;
+    QPushButton *lowerHeightBtn;
+    QPushButton *plusWidthBtn;
+    QPushButton *minusWidthBtn;
     QMenuBar *menubar;
     QMenu *menuTransformations;
 
@@ -85,18 +85,18 @@ public:
         groupBox_3 = new QGroupBox(centralwidget);
         groupBox_3->setObjectName("groupBox_3");
         groupBox_3->setGeometry(QRect(530, 10, 241, 141));
-        pushButton = new QPushButton(groupBox_3);
-        pushButton->setObjectName("pushButton");
-        pushButton->setGeometry(QRect(0, 40, 101, 31));
-        pushButton_2 = new QPushButton(groupBox_3);
-        pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(0, 90, 101, 31));
-        pushButton_3 = new QPushButton(groupBox_3);
-        pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setGeometry(QRect(120, 40, 111, 31));
-        pushButton_4 = new QPushButton(groupBox_3);
-        pushButton_4->setObjectName("pushButton_4");
-        pushButton_4->setGeometry(QRect(120, 90, 111, 31));
+        raiseHeightBtn = new QPushButton(groupBox_3);
+        raiseHeightBtn->setObjectName("raiseHeightBtn");
+        raiseHeightBtn->setGeometry(QRect(0, 40, 101, 31));
+        lowerHeightBtn = new QPushButton(groupBox_3);
+        lowerHeightBtn->setObjectName("lowerHeightBtn");
+        lowerHeightBtn->setGeometry(QRect(0, 90, 101, 31));
+        plusWidthBtn = new QPushButton(groupBox_3);
+        plusWidthBtn->setObjectName("plusWidthBtn");
+        plusWidthBtn->setGeometry(QRect(120, 40, 111, 31));
+        minusWidthBtn = new QPushButton(groupBox_3);
+        minusWidthBtn->setObjectName("minusWidthBtn");
+        minusWidthBtn->setGeometry(QRect(120, 90, 111, 31));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -124,10 +124,10 @@ public:
         clockwiseButton->setText(QCoreApplication::translate("MainWindow", "Clockwise", nullptr));
         anticlockButton->setText(QCoreApplication::translate("MainWindow", "AntiClowise", nullptr));
         groupBox_3->setTitle(QCoreApplication::translate("MainWindow", "Scale", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "raise height", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "lower height", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("MainWindow", "increase width", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("MainWindow", "decrease width", nullptr));
+        raiseHeightBtn->setText(QCoreApplication::translate("MainWindow", "raise height", nullptr));
+        lowerHeightBtn->setText(QCoreApplication::translate("MainWindow", "lower height", nullptr));
+        plusWidthBtn->setText(QCoreApplication::translate("MainWindow", "increase width", nullptr));
+        minusWidthBtn->setText(QCoreApplication::translate("MainWindow", "decrease width", nullptr));
         menuTransformations->setTitle(QCoreApplication::translate("MainWindow", "Transformations", nullptr));
     } // retranslateUi
 

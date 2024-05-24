@@ -26,6 +26,10 @@ private slots:
 
     void on_upButton_clicked();
 
+    void on_clockwiseButton_clicked();
+
+    void on_anticlockButton_clicked();
+
 private:
     Ui::MainWindow *ui;
 };
