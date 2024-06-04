@@ -40,6 +40,14 @@ private slots:
 
     void on_resetButton_clicked();
 
+    void on_rotate_plus_y_clicked();
+
+    void on_rotate_minus_y_clicked();
+
+    void on_rotate_plus_x_clicked();
+
+    void on_rotate_minus_x_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

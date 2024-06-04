@@ -15,12 +15,14 @@ public:
     //definidores
     void translate(float x, float y);
     void rotate(float z);
+    void rotateX(float x);
+    void rotateY(float y);
     void scale(float x, float y);
     void reset();
 
 private:
     float tx,ty;
-    float rz;
+    float rz, rx, ry;
     float sx, sy;
 };
 

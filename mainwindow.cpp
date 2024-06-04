@@ -43,13 +43,13 @@ void MainWindow::on_upButton_clicked()
 
 void MainWindow::on_clockwiseButton_clicked()
 {
-    this->ui->widget->rotate(5);
+    this->ui->widget->rotate(20);
 }
 
 
 void MainWindow::on_anticlockButton_clicked()
 {
-    this->ui->widget->rotate(-5);
+    this->ui->widget->rotate(-20);
 }
 
 
@@ -80,5 +80,29 @@ void MainWindow::on_minusWidthBtn_clicked()
 void MainWindow::on_resetButton_clicked()
 {
     this->ui->widget->reset();
+}
+
+
+void MainWindow::on_rotate_plus_y_clicked()
+{
+    this->ui->widget->rotateY(20);
+}
+
+
+void MainWindow::on_rotate_minus_y_clicked()
+{
+    this->ui->widget->rotateY(-20);
+}
+
+
+void MainWindow::on_rotate_plus_x_clicked()
+{
+    this->ui->widget->rotateX(20);
+}
+
+
+void MainWindow::on_rotate_minus_x_clicked()
+{
+    this->ui->widget->rotateX(-20);
 }
 
